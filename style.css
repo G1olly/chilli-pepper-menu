@@ -1,0 +1,314 @@
+/* === Variabili globali === */
+:root {
+  --primary-color: #e67e22;
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --card-bg: #e6e6e6;
+  --btn-bg: #db1111;
+  --btn-hover: #d35400;
+  --subtitle-color: #555555;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* === Reset e base === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+/* === Sezione categoria === */
+.categoria {
+  margin-bottom: 3rem;
+}
+
+.categoria h2 {
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+/* === Menu Item === */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.menu-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.item-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.3rem;
+  color: #000;
+}
+
+.item-info h2 {
+  font-size: 1.2rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--subtitle-color);
+  font-style: italic;
+  margin-top: -0.3rem;
+  margin-bottom: 0.6rem;
+}
+
+.item-info p {
+  font-size: 1rem;
+  color: #0b0606;
+}
+
+/* === Bottone Ordina === */
+.order-btn {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--btn-bg);
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.order-btn:hover {
+  background-color: var(--btn-hover);
+}
+
+/* === Prenotazione === */
+.reservation {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(207, 25, 25, 0.05); 
+  color: var(--text-color);
+  width: 100%;
+  max-width: 600px;
+}
+
+.reservation h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.reservation form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.reservation label {
+  font-weight: bold;
+}
+
+.reservation input {
+  padding: 0.5rem;
+  border: 1px solid #222;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+}
+
+.reservation button {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reservation button:hover {
+  background-color: #000;
+}
+
+/* === Responsive layout === */
+@media (min-width: 768px) {
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* === Mobile layout === */
+@media (max-width: 767px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .item-info {
+    width: 100%;
+  }
+
+  .order-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* === Pulsante selezione === */
+.selettore-categoria {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.selettore-categoria label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #e67e22;
+  font-size: 1rem;
+}
+
+.selettore-categoria select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 2px solid #e67e22;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.selettore-categoria select:hover,
+.selettore-categoria select:focus {
+  background-color: #2a2a2a;
+  outline: none;
+  border-color: #ff9933;
+}
+
+/* === Mobile frindly === */
+
+@media (max-width: 600px) {
+  .selettore-categoria select {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* === Footer === */
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--subtitle-color);
+  font-size: 0.9rem;
+}
+
+/* === Carrello === */
+#carrello-icon {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: #e67e22;
+  color: rgb(0, 0, 0);
+  padding: 0.6rem 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#carrello-popup {
+  position: fixed;
+  top: 4.5rem;
+  right: 1rem;
+  background-color: rgb(15, 3, 3);
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.carrello-nascosto {
+  display: none;
+}
+
+#carrello-lista {
+  list-style: none;
+  padding: 0;
+}
+
+#carrello-lista li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.3rem 0;
+}
+
+.rimuovi-btn {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
