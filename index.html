@@ -49,6 +49,13 @@
     <option value="secondi">Secondi</option>
     <option value="contorni">Contorni</option>
     <option value="insalatone">Insalatone</option>
+    <option value="dolci">Dolci</option>
+    <option value="panini">Panini</option>
+    <option value="birre">Birre</option>
+    <option value="birre calabresi">Birre Calabresi</option>
+    <option value="cocktail">Cocktail</option>
+    <option value="vini">Vini</option>
+
   </select>
 </div>
 
@@ -334,7 +341,7 @@
           <p>€18.00 - 20.00</p>
           <p><em>Contiene: chiedere al personale</em></p>
         </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Secondo del giorno', 18.00 - 20.00)">Aggiungi</button>
+        <button class="order-btn" onclick="aggiungiAlCarrello('Secondo del giorno', 18.00)">Aggiungi</button>
       </div>
 
     </section>
@@ -350,9 +357,9 @@
 
 
     <!-- Contorni -->
-    <section class="categoria" data-categoria="contorni">
-      <h2>Contorni / Side dishes</h2>
-      <div class="menu-item">
+    <section class="categoria">
+      <h2>Contorni / Side disches</h2>
+      <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Patate fritte*</h2>
           <h3 class="subtitle">(chips)</h3>
@@ -362,7 +369,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Patate fritte', 3.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Patate con buccia*</h2>
           <h3 class="subtitle">(potatoes with peel)</h3>
@@ -372,7 +379,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Patate con buccia*', 4.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Insalata mista</h2>
           <h3 class="subtitle">(mixed salad)</h3>
@@ -381,7 +388,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Insalata mista', 4.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Insalata verde</h2>
           <h3 class="subtitle">(green salad)</h3>
@@ -390,7 +397,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Insalata verde', 4.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Insalata di pomodori</h2>
           <h3 class="subtitle">(tomato salad)</h3>
@@ -399,7 +406,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Insalata di pomodori', 4.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Verdure grigliate</h2>
           <h3 class="subtitle">(grilled vegetables)</h3>
@@ -417,9 +424,9 @@
 
 
     <!-- Insalatone -->
-    <section class="categoria" data-categoria="insalatone">
+    <section class="categoria">
       <h2>Insalatone / Salads</h2>
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="insalatone">
         <div class="item-info">
           <h2>Tonno, pomodoro, cipolla, oliva</h2>
           <h3 class="subtitle">(Tuna, tomato, onion, olives)</h3>
@@ -428,7 +435,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Tonno, pomodoro, cipolla, oliva', 10.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="insalatone">
         <div class="item-info">
           <h2>Pollo, verde, mais, carote, pomodori</h2>
           <h3 class="subtitle">(Chicken, green, corn, carrots, tomatoes)</h3>
@@ -437,7 +444,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Pollo, verde, mais, carote, pomodori', 10.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="insalatone">
         <div class="item-info">
           <h2>Insalatona: lattuga, mais, pomodoro, carote, formaggio, olive, pomodori secchi</h2>
           <h3 class="subtitle">(Salad: lettuce, corn, tomato, carrots, cheese, olives, sun-dried tomatoes)</h3>
@@ -446,7 +453,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Insalatona: lattuga, mais, pomodoro, carote, formaggio, olive, pomodori secchi', 10.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="insalatone">
         <div class="item-info">
           <h2>Big di verdure grigliate</h2>
           <h3 class="subtitle">(Big grilled vegetables)</h3>
@@ -459,9 +466,9 @@
 
 
     <!-- Dolci -->
-    <section class="categoria" data-categoria="Dolci">
+    <section class="categoria" data-categoria="dolci">
       <h2>Dolci / Desserts</h2>
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="dolci">
         <div class="item-info">
           <h2>Dolce del giorno</h2>
           <h3 class="subtitle">(Dessert of the day)</h3>
@@ -470,7 +477,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Dolce del giorno', 4.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="dolci">
         <div class="item-info">
           <h2>Tartufo di pizzo</h2>
           <h3 class="subtitle">(Pizzo truffle)</h3>
@@ -491,7 +498,7 @@
     <!-- Panini -->
     <section class ="categoria" data-categoria="panini">
       <h2>Panini / Sandwitch</h2>
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Pizzitano</h2>
           <h3 class="subtitle">(Soppressata calabrese, melanzane sott'olio, pecorino del poro)</h3>
@@ -502,7 +509,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Pizzitano', 6.0)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Espresso</h2>
           <h3 class="subtitle">(Pollo, pomodoro, lattuga, maionese, ketchup)</h3>
@@ -513,7 +520,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Espresso', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Burgher</h2>
           <h3 class="subtitle">(Hamburgher, pancetta, formaggio, lattuga, pomodoro, maionese, ketchup)</h3>
@@ -524,7 +531,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Burgher', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Leggero</h2>
           <h3 class="subtitle">(Crudo, pomodoro, mozzarella, lattuga, maionese)</h3>
@@ -535,7 +542,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Leggero', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Mediterraneo</h2>
           <h3 class="subtitle">(Melanzane grigliate, tonno, scamorza, glassa di aceto balsamico)</h3>
@@ -546,7 +553,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Mediterraneo', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Calabrese</h2>
           <h3 class="subtitle">(Pomodoro tonno, cipolla, olive nduja)</h3>
@@ -557,7 +564,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Calabrese', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Bombetta</h2>
           <h3 class="subtitle">(Wurstel, sottiletta, nduja, ketchup, maionese, lattuga)</h3>
@@ -568,7 +575,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Bombetta', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Big Burgher (contorno con patatine)</h2>
           <h3 class="subtitle">(Doppio hamburgher, ketchup, maionese, pancetta, pomodoro, lattuga, cipolla agrodolce, cheddar)</h3>
@@ -579,7 +586,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Big Burgher', 12.00)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Big Luciano</h2>
           <h3 class="subtitle">(Salsiccia, peperoni, patate)</h3>
@@ -587,10 +594,10 @@
           <p>€6.00</p>
           <p><em>Contiene: glutine</em></p>
         </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Pizzitano', 6.0)">Aggiungi</button>
+        <button class="order-btn" onclick="aggiungiAlCarrello('Big Luciano', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Marino</h2>
           <h3 class="subtitle">(Salmone affumicato, lattuga, cipolla, formaggio, maionese)</h3>
@@ -601,7 +608,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Marino', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Chilli Pepper</h2>
           <h3 class="subtitle">(N'duja, schiacciata, funghi, formaggio)</h3>
@@ -612,14 +619,14 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Chilli Pepper', 6.0)">Aggiungi</button>
       </div>
 
-    <div class="menu-item">
+    <div class="menu-item" data-categoria="panini">
         <div class="item-info">
           <h2>Panino del giorno</h2>
           <h3 class="subtitle">(Sandwitch of the day)</h3>
           <p>€13.00</p>
           <p><em>Contiene: glutine, lattosio</em></p>
         </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Pizzitano', 13.00)">Aggiungi</button>
+        <button class="order-btn" onclick="aggiungiAlCarrello('Panino del giorno', 13.00)">Aggiungi</button>
       </div>
     </section>
 
@@ -632,7 +639,7 @@
     <!-- Birre -->
     <section class="categoria" data-categoria="birre">
       <h2>Birre / Beers</h2>
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Ceres Strong Ale cl 33</h2>
           <p>€4.00</p>
@@ -641,7 +648,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Ceres Strong Ale cl 33', 4.00)">Aggiungi</button>
       </div>
 
-<div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Corona cl 35,5</h2>
           <p>€4.00</p>
@@ -650,7 +657,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Corona cl 35,5', 4.0)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Franziskaner Hell torbida rossa cl 50</h2>
           <p>€5.00</p>
@@ -659,7 +666,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Franziskaner Hell torbida rossa cl 50', 5.0)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Franziskaner Hell Bionda cl 50</h2>
           <p>€5.00</p>
@@ -668,16 +675,16 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Franziskaner Hell Bionda cl 50', 5.0)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Peroni Nastro Azzurro cl 33 / cl 66</h2>
           <p>€3.00 / 5.00</p>
           <p><em>Contiene: glutine</em></p>
         </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Peroni Nastro Azzurro cl 33 / cl 66', 3.00 / 5.00)">Aggiungi</button>
+        <button class="order-btn" onclick="aggiungiAlCarrello('Peroni Nastro Azzurro cl 33 / cl 66', 3.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Peroni Graniserva Red cl 50</h2>
           <p>€5.00</p>
@@ -686,7 +693,7 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Peroni Graniserva Red cl 50', 5.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
+      <div class="menu-item" data-categoria="birre">
         <div class="item-info">
           <h2>Peroni Riserva Bianca cl 50</h2>
           <p>€5.00</p>
@@ -695,148 +702,266 @@
         <button class="order-btn" onclick="aggiungiAlCarrello('Peroni Riserva Bianca cl 50', 5.00)">Aggiungi</button>
       </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Peroni Riserva doppio malto cl 50</h2>
-          <p>€5.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Peroni Riserva doppio malto cl 50', 5.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Peroni Riserva doppio malto cl 50</h2>
+      <p>€5.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Peroni Riserva doppio malto cl 50', 5.00)">Aggiungi</button>
+  </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Tennents Super cl 33</h2>
-          <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Tennents Super cl 33', 4.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Tennents Super cl 33</h2>
+      <p>€4.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Tennents Super cl 33', 4.00)">Aggiungi</button>
+  </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Beck's cl 33</h2>
-          <p>€3.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Becks cl 33', 3.00)">Aggiungi</button>
-      </div>
+ <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Beck's cl 33</h2>
+      <p>€3.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Becks cl 33', 3.00)">Aggiungi</button>
+  </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Heineken cl 33</h2>
-          <p>€3.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Heineken cl 33', 3.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Heineken cl 33</h2>
+      <p>€3.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Heineken cl 33', 3.00)">Aggiungi</button>
+  </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Ichnusa non filtrata cl 50</h2>
-          <p>€5.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Ichnusa non filtrata cl 50', 5.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Ichnusa non filtrata cl 50</h2>
+      <p>€5.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Ichnusa non filtrata cl 50', 5.00)">Aggiungi</button>
+  </div>
 
-<div class="menu-item">
-        <div class="item-info">
-          <h2>Guinness Original cl 33</h2>
-          <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Guinness Original cl 33', 4.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Guinness Original cl 33</h2>
+      <p>€4.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Guinness Original cl 33', 4.00)">Aggiungi</button>
+  </div>
 
-<div class="menu-item">
-        <div class="item-info">
-          <h2>Leffe Blonde cl 33.</h2>
-          <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Leffe Blonde cl 33.', 6.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Leffe Blonde cl 33.</h2>
+      <p>€6.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Leffe Blonde cl 33.', 6.00)">Aggiungi</button>
+  </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Leffe Rouge Rossa cl 33</h2>
-          <p>€5.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Leffe Rouge Rossa cl 33', 5.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Leffe Rouge Rossa cl 33</h2>
+      <p>€5.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Leffe Rouge Rossa cl 33', 5.00)">Aggiungi</button>
+  </div>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Birra analcolica</h2>
-          <p>€3.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Birra analcolica', 3.00)">Aggiungi</button>
-      </div>
-    </section>
+  <div class="menu-item" data-categoria="birre">
+    <div class="item-info">
+      <h2>Birra analcolica</h2>
+      <p>€3.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Birra analcolica', 3.00)">Aggiungi</button>
+  </div>
+</section>
+
+
+
+
+
+
 
 <!-- Birre calabresi-->
-    <section class="categoria" data-categoria="birre calabresi ">
-      <h2>Birre Calabresi / Calabrian Beers</h2>
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Friddacala Pale Ale cl 33</h2>
-          <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Pale Ale cl 33', 6.00)">Aggiungi</button>
-      </div>
+<section class="categoria" data-categoria="birre calabresi">
+  <h2>Birre Calabresi / Calabrian Beers</h2>
+  <div class="menu-item" data-categoria="birre calabresi">
+    <div class="item-info">
+      <h2>Friddacala Pale Ale cl 33</h2>
+      <p>€6.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Pale Ale cl 33', 6.00)">Aggiungi</button>
+  </div>
 
-      
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Friddacala Scenay Belgian amber cl 33 - 7 vol</h2>
-          <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Reggina cl 33', 6.00)">Aggiungi</button>
-      </div>  
+  <div class="menu-item" data-categoria="birre calabresi">
+    <div class="item-info">
+      <h2>Friddacala Scenay Belgian amber cl 33 - 7 vol</h2>
+      <p>€6.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Scenay Belgian amber cl 33 - 7 vol', 6.00)">Aggiungi</button>
+  </div>
 
-      <div class="item-info">
-          <h2>Ceres Strong Ale cl 33</h2>
-          <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Ceres Strong Ale cl 33', 4.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre calabresi">
+    <div class="item-info">
+      <h2>Friddacala Tripel cl 33 - 9 vol</h2>
+      <p>€7.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Tripel cl 33 - 9 vol', 7.00)">Aggiungi</button>
+  </div>
 
+  <div class="menu-item" data-categoria="birre calabresi">
+    <div class="item-info">
+      <h2>Friddacala Imperial Ipa cl 33 - 7,5 vol</h2>
+      <p>€7.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Imperial Ipa cl 33 - 7,5 vol', 7.00)">Aggiungi</button>
+  </div>
 
-      <div class="item-info">
-          <h2>Ceres Strong Ale cl 33</h2>
-          <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Ceres Strong Ale cl 33', 4.00)">Aggiungi</button>
-      </div>
-
-
-      <div class="item-info">
-          <h2>Ceres Strong Ale cl 33</h2>
-          <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Ceres Strong Ale cl 33', 4.00)">Aggiungi</button>
-      </div>
-
-
-      <div class="item-info">
-          <h2>Ceres Strong Ale cl 33</h2>
-          <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Ceres Strong Ale cl 33', 4.00)">Aggiungi</button>
-      </div>
+  <div class="menu-item" data-categoria="birre calabresi">
+    <div class="item-info">
+      <h2>Friddacala Ipazza cl 33 - 6,0 vol</h2>
+      <p>€6.00</p>
+      <p><em>Contiene: glutine</em></p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Ipazza cl 33 - 6,0 vol', 6.00)">Aggiungi</button>
+  </div>
+</section>
 
 
 
 
+  <!-- Cocktail -->
+<section class="categoria" data-categoria="cocktail">
+  <h2>Cocktail  € 6.00</h2>
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Aperol Spritz</h2>
+      <h3 class="subtitle">Aperol, prosecco, Spritz</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+<section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Campari Spritz</h2>
+      <h3 class="subtitle">Bitter, campari, prosecco, spritz</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Americano</h2>
+      <h3 class="subtitle">Bitter, campari, vermouth rosso, spritz</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Negroni</h2>
+      <h3 class="subtitle">Bitter, campari, martini rosso, gin</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Bacardi</h2>
+      <h3 class="subtitle">Bacardi, rum bianco, succo limone, sciroppo granatina</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Daiquiri</h2>
+      <h3 class="subtitle">Rum bianco, succo lime, sciroppo, zucchero</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Caipirinha</h2>
+      <h3 class="subtitle">Vodka, lime, zucchero di canna</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Caipiroska</h2>
+      <h3 class="subtitle">Vodka, lime, zucchero di canna</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Mojito</h2>
+      <h3 class="subtitle">Rum bianco, succo limone, zucchero di cana, soda, menta</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>White Lady</h2>
+      <h3 class="subtitle">Gin, Cointreau, succo limone</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Moscow mule</h2>
+      <h3 class="subtitle">Ginger beer, vodka, succo lime</h3>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
+
+  <section class="categoria" data-categoria="cocktail">
+  <div class="menu-item" data-categoria="cocktail">
+    <div class="item-info">
+      <h2>Alla frutta, alcolico ed analcolico</h2>
+      <p>€6.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
+  </div>
 
 
 
