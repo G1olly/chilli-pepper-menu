@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
@@ -7,7 +6,7 @@
   <link rel="stylesheet" href="style.css" />
 
   <style>
-    /* (CSS esistente - invariato per brevità, puoi mantenerlo come nel tuo messaggio precedente) */
+
   </style>
 </head>
 <body>
@@ -15,7 +14,7 @@
   <header>
     <h1>🌶️ CHILLI PEPPER 🌶️</h1>
     <h2>Wine bar - trattoria </h2>
-    <h5>Via dei Sapori 45, Roma</h5>
+    <h5>Via San Francesco, 52 - PIZZO | CALABRIA</h5>
     <div id="carrello-icon" onclick="toggleCarrello()">
   🛒 <span id="carrello-contatore">0</span>
 </div>
@@ -52,15 +51,19 @@
     <option value="dolci">Dolci</option>
     <option value="panini">Panini</option>
     <option value="birre">Birre</option>
-    <option value="birre calabresi">Birre Calabresi</option>
     <option value="cocktail">Cocktail</option>
+    <option value="bar">Bar</option>
     <option value="vini">Vini</option>
-
   </select>
 </div>
-
+  <section class="intro">
+    <p>Caro ospite / cliente, se hai delle allergie e/o intolleranze alimentari chiedi pure informazioni sun nostro cibo e sulle nostre bevande.  Siamo preparati per consigliarti nel migliore dei modi</p>
+    <p>   </p>
+    <P>   </P>
+    <p>Dear guest / client, if you have any allergies and/or food intolerances, please ask for information about our food and drinks. We are prepared to advise you in the best way possible</p>
+  </section>
 <!-- Antipasti -->
-<section class="categoria">
+<section class="categoria" data-categoria ="antipasti">
   <h2>Antipasti / Starters</h2>
 
   <div class="menu-item" data-categoria="antipasti">
@@ -68,7 +71,7 @@
       <h2>Antipasto casereccio Calabrese</h2>
       <h3 class="subtitle">(Calabrian homemade appetizer)</h3>
       <p>€13.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Antipasto casereccio Calabrese (Calabrian homemade appetizer)', 13.00)">Aggiungi</button>
   </div>
@@ -78,7 +81,7 @@
       <h2>Tavolozza affettati tipici Calabresi</h2>
       <h3 class="subtitle">(Calabrian typical salumi)</h3>
       <p>€9.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Tavolozza affettati tipici Calabresi (Calabrian typical salumi)', 9.00)">Aggiungi</button>
   </div>
@@ -90,7 +93,7 @@
         <h2>Tris di pecorini Calabresi con marmellate</h2>
         <h3 class="subtitle">(tris of calabrian cheese with marmalade)</h3>
         <p>€9.00</p>
-          <p><em>Contiene: nessun allergene comune</em></p>
+          <p><em>Può contenere glutine</em></p>
       </div>
       <button class="order-btn" onclick="aggiungiAlCarrello('Tris di pecorini Calabresi con marmellate (tris of calabrian cheese with marmalade)', 9.00)">Aggiungi</button>
     </div>
@@ -100,7 +103,7 @@
           <h2>Composè di mare (6/7 tipi di pesce differenti)</h2>
           <h3 class="subtitle">(seafood appetizer (6/7 different fish on the plate)</h3>
           <p>€16.00</p>
-          <p><em>Contiene: lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Composè di mare (6/7 tipi di pesce differenti) (seafood appetizer (6/7 different fish on the plate)', 16.00)">Aggiungi</button>
       </div>
@@ -110,7 +113,7 @@
           <h2>Caprese (pomodoro, mozzarella, basilico)</h2>
           <h3 class="subtitle">((tomato, mozzarella and basil)</h3>
           <p>€9.00</p>
-          <p><em>Contiene: lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Caprese (pomodoro, mozzarella, basilico) (tomato, mozzarella and basil)', 9.00)">Aggiungi</button>
       </div>
@@ -125,14 +128,14 @@
 
 
     <!-- Primi -->
-    <section class="categoria">
+    <section class="categoria" data-categoria="primi">
       <h2>Primi piatti / Pasta</h2>
       <div class="menu-item" data-categoria="primi">
         <div class="item-info">
           <h2>Zuppa di cipolia con crostone di pane e pecorino</h2>
           <h3 class="subtitle">(Onion soup with toasted bread and pecorino cheese)</h3>
           <p>€10.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Zuppa di cipolia con crostone di pane e pecorino', 10.00)">Aggiungi</button>
       </div>
@@ -142,7 +145,7 @@
           <h2>Spaghetti aglio, olio, peperoncino</h2>
           <h3 class="subtitle">(Spoghetti garlic, oli, chill)</h3>
           <p>€9.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Spaghetti aglio, olio, peperoncino', 9.00)">Aggiungi</button>
       </div>
@@ -152,7 +155,7 @@
           <h2>Spaghetti pomodorini pachino e basilico</h2>
           <h3 class="subtitle">(Spaghetti cherry tomatoes and basil)</h3>
           <p>€10.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Spaghetti pomodorini pachino e basilico', 10.00)">Aggiungi</button>
       </div>
@@ -162,7 +165,7 @@
           <h2>Spaghetti allo scoglio*</h2>
           <h3 class="subtitle">(Spaghetti with seafood)</h3>
           <p>€14.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Spaghetti allo scoglio*', 14.00)">Aggiungi</button>
       </div>
@@ -172,7 +175,7 @@
           <h2>Fileja allo scoglio</h2>
           <h3 class="subtitle">(Fileja with seafood)</h3>
           <p>€14.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Fileja allo scoglio', 14.00)">Aggiungi</button>
       </div>
@@ -182,7 +185,7 @@
           <h2>Stroncatura con acciughe, pomodorini, olive e pangrattato</h2>
           <h3 class="subtitle">(Stroncatura with anchovies, cherry tomatoes, olives and breadcrumbs)</h3>
           <p>€14.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Stroncatura con acciughe, pomodorini, olive e pangrattato', 14.00)">Aggiungi</button>
       </div>
@@ -192,7 +195,7 @@
           <h2>Spaghetti alle vongole</h2>
           <h3 class="subtitle">(Spaghetti with clams)</h3>
           <p>€14.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Spaghetti alle vongole', 14.00)">Aggiungi</button>
       </div>
@@ -202,7 +205,7 @@
           <h2>Fileja con salsiccia e funghi</h2>
           <h3 class="subtitle">(Fileja with sausage and mashrooms)</h3>
           <p>€13.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Fileja con salsiccia e funghi', 13.00)">Aggiungi</button>
       </div>
@@ -212,7 +215,7 @@
           <h2>Fileja alla n'dujia e pecorino</h2>
           <h3 class="subtitle">(Fileja with nduja and pecorino cheese)</h3>
           <p>€12.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Fileja alla ndujia e pecorino', 12.00)">Aggiungi</button>
       </div>
@@ -222,7 +225,7 @@
           <h2>Primo del giorno</h2>
           <h3 class="subtitle">(Pasta speciality of the day)</h3>
           <p>€15.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Lasagna', 15.00)">Aggiungi</button>
       </div>
@@ -235,14 +238,14 @@
 
 
     <!-- Secondi -->
-    <section class="categoria">
+    <section class="categoria" data-categoria="secondi">
       <h2>Secondi piatti / Main course</h2>
       <div class="menu-item" data-categoria="secondi">
         <div class="item-info">
           <h2>Frittura mista*</h2>
           <h3 class="subtitle">(Mixed fries)</h3>
           <p>€15.00</p>
-          <p><em>Contiene: molluschi</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Frittura mista*', 15.00)">Aggiungi</button>
       </div>
@@ -252,7 +255,7 @@
           <h2>Calamari arrosto*</h2>
           <h3 class="subtitle">(Roast squid)</h3>
           <p>€14.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Scaloppine al limone', 14.00)">Aggiungi</button>
       </div>
@@ -262,7 +265,7 @@
           <h2>Pesce spada alla griglia*</h2>
           <h3 class="subtitle">(grilled swordfish)</h3>
           <p>€17.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Pesce spada alla griglia*', 17.00)">Aggiungi</button>
       </div>
@@ -272,7 +275,7 @@
           <h2>Pepata di cozze</h2>
           <h3 class="subtitle">(peppered mussels)</h3>
           <p>€10.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Pepata di cozze', 10.00)">Aggiungi</button>
       </div>
@@ -282,7 +285,7 @@
           <h2>Grigliata mista di pesce</h2>
           <h3 class="subtitle">(Mix grilled fish)</h3>
           <p>€20.00</p>
-          <p><em>Contiene: chiedere al personale</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Grigliata mista di pesce', 20.00)">Aggiungi</button>
       </div>
@@ -319,7 +322,7 @@
           <h2>Entrecote con funghi in padella</h2>
           <h3 class="subtitle">(entrecote with mushrooms in a pan)</h3>
           <p>€18.00</p>
-          <p><em>Contiene: funghi</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Entrecote con funghi in padella', 18.00)">Aggiungi</button>
       </div>
@@ -329,7 +332,7 @@
           <h2>Cotoletta e patatine</h2>
           <h3 class="subtitle">(cutlet and chips)</h3>
           <p>€9.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Scaloppine al limone', 9.00)">Aggiungi</button>
       </div>
@@ -339,7 +342,7 @@
           <h2>Secondo del giorno</h2>
           <h3 class="subtitle">(fish of the day)</h3>
           <p>€18.00 - 20.00</p>
-          <p><em>Contiene: chiedere al personale</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Secondo del giorno', 18.00)">Aggiungi</button>
       </div>
@@ -357,14 +360,14 @@
 
 
     <!-- Contorni -->
-    <section class="categoria">
+    <section class="categoria" data-categoria="contorni">
       <h2>Contorni / Side disches</h2>
       <div class="menu-item" data-categoria="contorni">
         <div class="item-info">
           <h2>Patate fritte*</h2>
           <h3 class="subtitle">(chips)</h3>
           <p>€3.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Patate fritte', 3.00)">Aggiungi</button>
       </div>
@@ -374,7 +377,7 @@
           <h2>Patate con buccia*</h2>
           <h3 class="subtitle">(potatoes with peel)</h3>
           <p>€4.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Patate con buccia*', 4.00)">Aggiungi</button>
       </div>
@@ -414,6 +417,7 @@
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Verdure grigliate', 4.00)">Aggiungi</button>
       </div>
+    </section>
 
 
 
@@ -424,7 +428,7 @@
 
 
     <!-- Insalatone -->
-    <section class="categoria">
+    <section class="categoria" data-categoria="insalatone">
       <h2>Insalatone / Salads</h2>
       <div class="menu-item" data-categoria="insalatone">
         <div class="item-info">
@@ -461,6 +465,7 @@
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Big di verdure grigliate', 9.00)">Aggiungi</button>
       </div>
+    </section>
 
 
 
@@ -504,7 +509,7 @@
           <h3 class="subtitle">(Soppressata calabrese, melanzane sott'olio, pecorino del poro)</h3>
           <h4 class="subtitle">(Calabrian soppressata, eggplant in oil, pecorino cheese)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Pizzitano', 6.0)">Aggiungi</button>
       </div>
@@ -515,7 +520,7 @@
           <h3 class="subtitle">(Pollo, pomodoro, lattuga, maionese, ketchup)</h3>
           <h4 class="subtitle">(Chicken, tomato, lettuce, mayonnaise, ketchup)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Espresso', 6.0)">Aggiungi</button>
       </div>
@@ -526,7 +531,7 @@
           <h3 class="subtitle">(Hamburgher, pancetta, formaggio, lattuga, pomodoro, maionese, ketchup)</h3>
           <h4 class="subtitle">(Hamburger, bacon, cheese, lettuce, tomato, mayonnaise, ketchup)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Burgher', 6.0)">Aggiungi</button>
       </div>
@@ -537,7 +542,7 @@
           <h3 class="subtitle">(Crudo, pomodoro, mozzarella, lattuga, maionese)</h3>
           <h4 class="subtitle">(Ham, tomato, mozzarella, lettuce, mayonnaise)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Leggero', 6.0)">Aggiungi</button>
       </div>
@@ -548,7 +553,7 @@
           <h3 class="subtitle">(Melanzane grigliate, tonno, scamorza, glassa di aceto balsamico)</h3>
           <h4 class="subtitle">(Grilled eggplant, tuna, smoked cheese, balsamic vinegar glaze)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Mediterraneo', 6.0)">Aggiungi</button>
       </div>
@@ -559,7 +564,7 @@
           <h3 class="subtitle">(Pomodoro tonno, cipolla, olive nduja)</h3>
           <h4 class="subtitle">(Tomato, tuna, onion, olives, nduja)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Calabrese', 6.0)">Aggiungi</button>
       </div>
@@ -570,7 +575,7 @@
           <h3 class="subtitle">(Wurstel, sottiletta, nduja, ketchup, maionese, lattuga)</h3>
           <h4 class="subtitle">(Sausage, cheese, nduja, ketchup, mayonnaise, lettuce)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Bombetta', 6.0)">Aggiungi</button>
       </div>
@@ -581,7 +586,7 @@
           <h3 class="subtitle">(Doppio hamburgher, ketchup, maionese, pancetta, pomodoro, lattuga, cipolla agrodolce, cheddar)</h3>
           <h4 class="subtitle">(Double hamburger, ketchup, mayonnaise, bacon, tomato, lettuce, sweet and sour onion, cheddar)</h4>
           <p>€12.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Big Burgher', 12.00)">Aggiungi</button>
       </div>
@@ -592,7 +597,7 @@
           <h3 class="subtitle">(Salsiccia, peperoni, patate)</h3>
           <h4 class="subtitle">(Sausage, peppers, potatoes)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Big Luciano', 6.0)">Aggiungi</button>
       </div>
@@ -603,7 +608,7 @@
           <h3 class="subtitle">(Salmone affumicato, lattuga, cipolla, formaggio, maionese)</h3>
           <h4 class="subtitle">(Smoked salmon, lettuce, onion, cheese, mayonnaise)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Marino', 6.0)">Aggiungi</button>
       </div>
@@ -614,7 +619,7 @@
           <h3 class="subtitle">(N'duja, schiacciata, funghi, formaggio)</h3>
           <h4 class="subtitle">(N'duja, schiacciata, mushrooms, cheese)</h4>
           <p>€6.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Chilli Pepper', 6.0)">Aggiungi</button>
       </div>
@@ -624,7 +629,7 @@
           <h2>Panino del giorno</h2>
           <h3 class="subtitle">(Sandwitch of the day)</h3>
           <p>€13.00</p>
-          <p><em>Contiene: glutine, lattosio</em></p>
+          <p><em>Può contenere glutine</em></p>
         </div>
         <button class="order-btn" onclick="aggiungiAlCarrello('Panino del giorno', 13.00)">Aggiungi</button>
       </div>
@@ -797,7 +802,7 @@
     <div class="item-info">
       <h2>Friddacala Pale Ale cl 33</h2>
       <p>€6.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Pale Ale cl 33', 6.00)">Aggiungi</button>
   </div>
@@ -806,7 +811,7 @@
     <div class="item-info">
       <h2>Friddacala Scenay Belgian amber cl 33 - 7 vol</h2>
       <p>€6.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Scenay Belgian amber cl 33 - 7 vol', 6.00)">Aggiungi</button>
   </div>
@@ -815,7 +820,7 @@
     <div class="item-info">
       <h2>Friddacala Tripel cl 33 - 9 vol</h2>
       <p>€7.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Tripel cl 33 - 9 vol', 7.00)">Aggiungi</button>
   </div>
@@ -824,7 +829,7 @@
     <div class="item-info">
       <h2>Friddacala Imperial Ipa cl 33 - 7,5 vol</h2>
       <p>€7.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Imperial Ipa cl 33 - 7,5 vol', 7.00)">Aggiungi</button>
   </div>
@@ -833,7 +838,7 @@
     <div class="item-info">
       <h2>Friddacala Ipazza cl 33 - 6,0 vol</h2>
       <p>€6.00</p>
-      <p><em>Contiene: glutine</em></p>
+      <p><em>Può contenere glutine</em></p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Friddacala Ipazza cl 33 - 6,0 vol', 6.00)">Aggiungi</button>
   </div>
@@ -853,9 +858,10 @@
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
   </div>
+</section>
 
 <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Campari Spritz</h2>
       <h3 class="subtitle">Bitter, campari, prosecco, spritz</h3>
@@ -865,7 +871,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Americano</h2>
       <h3 class="subtitle">Bitter, campari, vermouth rosso, spritz</h3>
@@ -875,7 +881,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Negroni</h2>
       <h3 class="subtitle">Bitter, campari, martini rosso, gin</h3>
@@ -885,7 +891,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Bacardi</h2>
       <h3 class="subtitle">Bacardi, rum bianco, succo limone, sciroppo granatina</h3>
@@ -895,7 +901,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Daiquiri</h2>
       <h3 class="subtitle">Rum bianco, succo lime, sciroppo, zucchero</h3>
@@ -905,7 +911,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Caipirinha</h2>
       <h3 class="subtitle">Vodka, lime, zucchero di canna</h3>
@@ -925,7 +931,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Mojito</h2>
       <h3 class="subtitle">Rum bianco, succo limone, zucchero di cana, soda, menta</h3>
@@ -935,7 +941,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>White Lady</h2>
       <h3 class="subtitle">Gin, Cointreau, succo limone</h3>
@@ -945,7 +951,7 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Moscow mule</h2>
       <h3 class="subtitle">Ginger beer, vodka, succo lime</h3>
@@ -955,20 +961,213 @@
   </div>
 
   <section class="categoria" data-categoria="cocktail">
-  <div class="menu-item" data-categoria="cocktail">
+  <div class="menu-item">
     <div class="item-info">
       <h2>Alla frutta, alcolico ed analcolico</h2>
       <p>€6.00</p>
     </div>
     <button class="order-btn" onclick="aggiungiAlCarrello('Aperol Spritz', 6.00)">Aggiungi</button>
   </div>
+</section>
 
 
 
 
 
+<!-- Bar -->
+ <section class="categoria" data-categoria="bar">
+      <h2>Bar</h2>
+      <div class="menu-item" data-categoria="bar">
+        <div class="item-info">
+          <h2>Caffè</h2>
+          <p>€1.00</p>
+        </div>
+        <button class="order-btn" onclick="aggiungiAlCarrello('Caffè', 1.00)">Aggiungi</button>
+      </div>
+      <div class="menu-item">
+        <div class="item-info">
+          <h2>Cappuccino</h2>
+          <p>€2.00</p>
+        </div>
+        <button class="order-btn" onclick="aggiungiAlCarrello('Cappuccino', 2.00)">Aggiungi</button>
+      </div>
 
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Vino a calice bianco o rosso e rosè</h2>
+      <p>€4.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Vino a calice bianco o rosso e rosè', 4.00)">Aggiungi</button>
+  </div>
 
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Acqua naturale o gassata It 0,5</h2>
+      <p>€1.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Acqua naturale o gassata It 0,5', 1.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Acqua naturale o gassata It 1</h2>
+      <p>€2.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Acqua naturale o gassata It 1', 2.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>The Ferrero lattina limone / pesca cl 33</h2>
+      <p>€2.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('The Ferrero lattina limone / pesca cl 33', 2.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Coca Cola / Coca Cola Zero lattina cl 33</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Coca Cola / Coca Cola Zero lattina cl 33', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Fanta lattina cl 33</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Fanta lattina cl 33', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Sprite lattina cl 33</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Sprite lattina cl 33', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Lemon Schweppes cl 33</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Lemon Schweppes cl 33', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Lemonsoda cl 20</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Lemonsoda cl 20', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Succhi di Frutta</h2>
+      <p>€2.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Succhi di Frutta', 2.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Acqua Tonica Schweppes cl 33</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Acqua Tonica Schweppes cl 33', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Red Bull lattina cl 25</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Red Bull lattina cl 25', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Chinotto cl 33</h2>
+      <p>€2.50</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Chinotto cl 33', 2.50)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Crodino</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Crodino', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Campari Soda</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Campari Soda', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Amari</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Amari', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Liquirizia</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Liquirizia', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Limoncello</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Limoncello', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Whisky</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Whisky', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Grappa bianca</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Grappa bianca', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Grappa barrique</h2>
+      <p>€3.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Grappa barrique', 3.00)">Aggiungi</button>
+  </div>
+
+  <div class="menu-item" data-categoria="bar">
+    <div class="item-info">
+      <h2>Brandy / Ron / Cognac</h2>
+      <p>€4.00</p>
+    </div>
+    <button class="order-btn" onclick="aggiungiAlCarrello('Brandy / Ron / Cognac', 4.00)">Aggiungi</button>
+  </div>
+</section>
 
 
 
@@ -979,50 +1178,601 @@
 
 
     <!-- Carta dei Vini -->
-    <section class="categoria" data-categoria="vini">
-      <h2>Carta dei Vini</h2>
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Chianti Classico</h2>
-          <p>€18.00</p>
-          <p><em>Contiene: solfiti</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Chianti Classico', 18.0)">Aggiungi</button>
-      </div>
+<!-- Carta dei Vini -->
+<section class="categoria" data-categoria="vini">
+  <h2>Carta dei Vini</h2>
 
-      <div class="menu-item">
-        <div class="item-info">
-          <h2>Prosecco DOC</h2>
-          <p>€16.00</p>
-          <p><em>Contiene: solfiti</em></p>
-        </div>
-        <button class="order-btn" onclick="aggiungiAlCarrello('Prosecco DOC', 16.0)">Aggiungi</button>
+  <!-- Tenuta Iuzzolini -->
+  <div class="sottocategoria">
+    <h3>TENUTA IUZZOLINI</h3>
+    <p> </p>
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Iuzzolini Classico DOC</h4>
+        <p>Bianco/Rosso/Rosato cl 75</p>
+        <p>   </p>
+        <p>€14.00</p>
       </div>
-    </section>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Iuzzolini Classico DOC', 14.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Madre Goccia IGT</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Madre Goccia IGT', 20.00)">Aggiungi</button>
+    </div>
+  </div>
+
+   <div class="menu-item">
+      <div class="item-info">
+        <h4>Principe Spinelli DOC</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Principe Spinelli DOC', 20.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Muranera IGT</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€30.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Muranera IGT', 30.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Lumare IGT</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Lumare IGT', 20.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Donna Giovanna</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€35.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Donna Giovanna', 35.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Prima Fila Pecorello</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€25.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Prima Fila Pecorello', 25.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Fermentino</h4>
+        <p>Bianco / Rosè Frazzante cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Donna Giovanna', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Belfresco IGT</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Donna Giovanna', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Baroni Capoano -->
+  <div class="sottocategoria">
+    <h3>BARONI CAPOANO</h3>
+    <p> </p>
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Cirò DOP</h4>
+        <p>Bianco / Rosso / Rosato cl 75</p>
+        <p>   </p>
+        <p>€14.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Cirò DOP', 14.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Cirò DOP</h4>
+        <p>Bianco / Rosso cl 37.5</p>
+        <p>   </p>
+        <p>€9.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Cirò DOP', 9.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Antea DOP</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Antea DOP', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Pecorello Oneiro IGP</h4>
+        <p>Bianco / Rosso / Rosato cl 75</p>
+        <p>   </p>
+        <p>€25.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Pecorello Oneiro IGP', 25.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Barone Raffaele Cirò DOP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€35.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Barone Raffaele Cirò DOP', 35.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Neruda Cirò DOP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Neruda Cirò DOP', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Don Angelo Cirò Bio DOP</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Don Angelo Cirò Bio DOP', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- Spadafora 1915 -->
+  <div class="sottocategoria">
+    <h3>SPADAFORA 1915</h3>
+    <p> </p>
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Luna piena Terre di Cosenza</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€19.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Luna piena Terre di Cosenza', 19.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Peperosso Black Calabria IGP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Peperosso Black Calabria IGP', 20.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Solenero Calabria IGP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Solenero Calabria IGP', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Telesio Terre di Cosenza DOP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€30.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Telesio Terre di Cosenza DOP', 30.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>1915 DOP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€35.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('1915 DOP', 35.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Rosa Spina Calabria IGPP</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Rosa Spina Calabria IGP', 20.00)">Aggiungi</button>
+    </div>
+  </div>
+
+
+ <!-- Satti -->
+  <div class="sottocategoria">
+    <h3>STATTI</h3>
+    <p> </p>
+    
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Bluette Calabria IGT</h4>
+        <p>Bianco Frizzante cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Bluette Calabria IGT', 20.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>Gaglioppo Calabria IGT</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Gaglioppo Calabria IGT', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>IGT Greco Nero</h4>
+        <p>Rosè cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('IGT Greco Nero', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+  <div class="menu-item">
+      <div class="item-info">
+        <h4>IGT Greco Bianco</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€19.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('IGT Greco Bianco', 19.00)">Aggiungi</button>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Brigante Vigneti e cantina-->
+
+<div class="sottocategoria">
+    <h3>BRIGANTE VIGNETI & CANTINA</h3>
+    <p> </p>
+    
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Etefe Cirò DOC</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€16.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Etefe Cirò DOC', 16.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Phemina Cirò DOC</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€16.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Phemina Cirò DOC', 16.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Cirò DOC rosato Manyari</h4>
+        <p>Bianco Frizzante cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Cirò DOC rosato Manyari', 18.00)">Aggiungi</button>
+    </div>
+  </div>
+
+
+
+<!-- Cantine de mare-->
+
+<div class="sottocategoria">
+    <h3>CANTINE DE MARE</h3>
+    <p> </p>
+    
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Sant'Angelo DOC</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Sant Angelo DOC', 18.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Pecorello Matto IGP</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€25.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Pecorello Matto IGP', 25.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Amarillo DOC</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Amarillo DOC', 18.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Prima Luce DOC</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Prima Luce DOC', 18.00)">Aggiungi</button>
+    </div>
+
+
+
+
+    <!-- Librandi-->
+
+<div class="sottocategoria">
+    <h3>LIBRANDI</h3>
+    <p> </p>
+    
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Segno DOC</h4>
+        <p>Bianco / Rosso / Rosato cl 75</p>
+        <p>   </p>
+        <p>€16.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Sant Angelo DOC', 16.00)">Aggiungi</button>
+    </div>
+
+    <!-- Cantine benvenuto-->
+
+<div class="sottocategoria">
+    <h3>CANTINE BENVENUTO</h3>
+    <p> </p>
+    
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Mare IGP</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Mare IGP', 20.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Zibibbo IGP</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€25.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Zibibbo IGP', 25.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Terra IGP</h4>
+        <p>Rosso cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Terra IGP', 20.00)">Aggiungi</button>
+    </div>
+
+
+
+  <!-- Cantine Russo e Longo-->
+
+<div class="sottocategoria">
+    <h3>CANTINE RUSSO & LONGO</h3>
+    <p> </p>
+    
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Terre di Trezzi</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Terre di Trezzi', 18.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>OIS Pecorello</h4>
+        <p>Bianco cl 75</p>
+        <p>   </p>
+        <p>€25.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('OIS Pecorello', 25.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Colli di Ginestra</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€18.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Colli di Ginestra', 18.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Almarisa</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Almarisa', 20.00)">Aggiungi</button>
+    </div>
+
+    <div class="menu-item">
+      <div class="item-info">
+        <h4>Serra Barbara IGT</h4>
+        <p>Rosato cl 75</p>
+        <p>   </p>
+        <p>€20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Serra Barbara IGT', 20.00)">Aggiungi</button>
+    </div>
+
+
+ <div class="menu-item">
+      <div class="item-info">
+        <h4>Prosecco</h4>
+        <p></p>
+        <p>   </p>
+        <p>€ 18.00 / € 20.00</p>
+      </div>
+      <button class="order-btn" onclick="aggiungiAlCarrello('Serra Barbara IGTProsecco', 18.00 )">Aggiungi</button>
+
+
+
+</section>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   </main>
 
+
+
+
+
+
+
+
+
+
   <section class="cart">
-    <h2>Carrello</h2>
+    <h2></h2>
     <ul id="carrello-lista"></ul>
   </section>
 
+  <section class="social" id="social">
+  <h2>Seguici sui social</h2>
+  <div class="social-links">
+    <a href="https://www.facebook.com/chilipepperpizzo" target="_blank" aria-label="Facebook">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+    </a>
+    <a href="https://www.instagram.com/chilli_pepper_pizzo?igsh=ZnVuNGUzcXN1MjFr" target="_blank" aria-label="Instagram">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" />
+    </a>
+    <a href="https://www.tripadvisor.com/Restaurant_Review-g669647-d12417342-Reviews-Chilli_Pepper-Pizzo_Province_of_Vibo_Valentia_Calabria.html" target="_blank" aria-label="TripAdvisor">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tripadvisor.svg" alt="TripAdvisor" />
+    </a>
+  </div>
+</section>
+
+
+
   <footer class="footer">
-  <p>📍 Via del Peperoncino, 12 - Reggio Calabria</p>
-  <p>📞 +39 333 123 4567 | 📧 info@chillipepper.it</p>
-  <p>🕒 Aperto tutti i giorni: 12:00 - 15:00 / 19:00 - 23:30</p>
+  <p>📍 Via San Francesco, 52 - PIZZO | CALABRIA</p>
+  <p>📞 3394288383  - 3207616379  | 📧 pinobuffone@me.com</p>
+  <p>🕒 Aperto tutti i giorni: 11:45 - 14:30 / 18:30 - 23:30</p>
   <p>© 2025 Chilli Pepper</p>
   </footer>
     <ul style="margin-top: 1rem; line-height: 1.8;">
-      <li><strong>📞 Telefono:</strong> <a href="tel:+390612345678" style="color: #d35400;">06 1234 5678</a></li>
-      <li><strong>📧 Email:</strong> <a href="mailto:prenotazioni@chillipepper.it" style="color: #d35400;">prenotazioni@chillipepper.it</a></li>
-      <li><strong>📍 Indirizzo:</strong> Via dei Sapori 45, Roma</li>
+      <li><strong>📞 Telefono:</strong> <a href="tel:+390612345678" style="color: #d35400;">  Luciano:    3394288383</a></li>
+      <li><strong>📞 Telefono:</strong> <a href="tel:+390612345678" style="color: #d35400;">  Pino:   3207616379</a></li>
+      <li><strong>📧 Email:</strong> <a href="pinobuffone@me.com" style="color: #d35400;">pinobuffone@me.com
+      </a></li>
+      <li><strong>📍 Indirizzo:</strong> Via San Francesco, 52 - PIZZO | CALABRIA</li>
     </ul>
   </section>
 
   <section class="reservation">
     <h2>Informazioni importanti</h2>
-    <p>I piatti contrassegnati con asterisco (*) potrebbero contenere ingredienti surgelati all'origine.</p>
-    <p>Per informazioni dettagliate sugli allergeni, rivolgersi al personale di sala.</p>
+    <p>I piatti contrassegnati con asterisco (*) se non reperibili freschi sono surgelati di primissima qualità.</p>
+    <p>The dishes marked with (*) if they are not available fresh are of the highest quality frozen</p>
+    <p> Coperto €2.00</p>
   </section>
 
 
@@ -1071,18 +1821,33 @@
 
   </script>
   <script>
-  function filtraCategoria(categoria) {
-    const piatti = document.querySelectorAll('.menu-item');
-    piatti.forEach(piatto => {
-      const cat = piatto.getAttribute('data-categoria');
-      if (categoria === 'tutti' || cat === categoria) {
-        piatto.style.display = 'flex'; // o 'block' se non usi Flexbox
+function filtraCategoria(categoria) {
+  const items = document.querySelectorAll('.menu-item');
+  if (categoria === 'tutti') {
+    items.forEach(item => item.style.display = '');
+  } else {
+    items.forEach(item => {
+      // Controlliamo il data-categoria sull'item,
+      // oppure lo ereditano dalla sezione? Se serve, aggiungilo!
+      if (
+        (item.dataset.categoria && item.dataset.categoria === categoria) ||
+        (item.closest('.categoria') && item.closest('.categoria').dataset.categoria === categoria)
+      ) {
+        item.style.display = '';
       } else {
-        piatto.style.display = 'none';
+        item.style.display = 'none';
       }
     });
   }
+  // Nascondiamo anche i titoli delle sezioni vuote:
+  document.querySelectorAll('.categoria').forEach(sezione => {
+    const visibili = sezione.querySelectorAll('.menu-item:not([style*="display: none"])');
+    sezione.style.display = visibili.length > 0 ? '' : 'none';
+  });
+}
 </script>
+
+
 
 </body>
 </html>
