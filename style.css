@@ -312,3 +312,56 @@ footer {
   cursor: pointer;
   font-size: 0.8rem;
 }
+
+.rimuovi-btn:hover {
+  background-color: #e74c3c;
+}
+#carrello-totale {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #e67e22;
+}
+#carrello-totale span {
+  font-size: 1.2rem;
+}
+#carrello-totale span::before {
+  content: "Totale: ";
+  font-weight: normal;
+}
+#carrello-totale span::after {
+  content: " €";
+  font-weight: normal;
+}
+
+/* === Pulsante Social === */
+.social {
+  text-align: center;
+  margin: 48px 0 32px 0;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 12px;
+}
+.social-links a img {
+  width: 44px;
+  height: 44px;
+  filter: grayscale(50%);
+  transition: transform 0.2s, filter 0.2s;
+}
+.social-links a:hover img {
+  transform: scale(1.13) rotate(-5deg);
+  filter: none;
+}
+
+.social-links a img {
+  width: 44px;
+  height: 44px;
+  filter: brightness(0) invert(1);  /* <-- Questa fa diventare le icone bianche */
+  transition: transform 0.2s, filter 0.2s;
+}
+.social-links a:hover img {
+  transform: scale(1.13) rotate(-5deg);
+  filter: brightness(0) invert(1) drop-shadow(0 0 8px #fff);
+}
